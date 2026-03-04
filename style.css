@@ -7558,65 +7558,75 @@ footer .footer-bottom p a {
   display: none;
 }
 
-/* 2. Styles for mobile devices only (screen width less than 767px) */
+/* --- FINAL MOBILE APP BANNER STYLES --- */
 @media (max-width: 767px) {
-
   #mobile-app-banner {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    backdrop-filter: blur(10px);
-    padding: 12px 15px;
-    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.1);
-    z-index: 9999;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex !important;
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 75px !important;
+    background: #ffffff !important;
+    box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.15) !important;
+    z-index: 10000 !important;
+    padding: 10px 15px !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    border-top: 1px solid #eee !important;
+    box-sizing: border-box !important;
   }
 
-  /* Add app icon styles here */
+  .banner-content {
+    display: flex !important;
+    align-items: center !important;
+    text-decoration: none !important;
+    color: #333 !important;
+    flex-grow: 1 !important;
+  }
+
   .app-icon {
-    width: 45px;
-    height: 45px;
-    background: #000;
-    color: #fff;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    font-weight: bold;
-    margin-right: 12px;
-    flex-shrink: 0;
+    width: 45px !important;
+    height: 45px !important;
+    background: #000 !important;
+    color: #fff !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    margin-right: 12px !important;
+    flex-shrink: 0 !important;
   }
 
   .app-icon::before {
-    content: "P";
+    content: "P" !important;
   }
 
-  /* Layout for the banner content */
-  .banner-content {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #333;
-    flex-grow: 1;
+  .app-info h4 {
+    margin: 0 !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
   }
 
-  /* Close (X) button styles */
+  .app-info p {
+    margin: 0 !important;
+    font-size: 12px !important;
+    color: #666 !important;
+    line-height: 1.2 !important;
+  }
+
   .close-banner {
-    background: none;
-    border: none;
-    font-size: 28px;
-    color: #999;
-    cursor: pointer;
-    padding: 0 5px 0 15px;
-    line-height: 1;
+    background: none !important;
+    border: none !important;
+    font-size: 28px !important;
+    color: #999 !important;
+    padding: 0 0 0 15px !important;
+    line-height: 1 !important;
+    cursor: pointer !important;
   }
-
 }
 
-/* This closing brace ends the @media block correctly */
+/* < - - - THIS BRACKET CLOSES EVERYTHING. THEN YOU DO NOT NEED ANOTHER BRACKET */
